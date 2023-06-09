@@ -12,8 +12,8 @@
         <img src="assets/logo.png" alt="logo" />
       </div>
       <div class="right-side">
-        <div class="top-inputs">
-          <a class="anchor-grey" href="">
+        <div class="top-text">
+          <a class="anchor-decoration" href="">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               x="0px"
@@ -29,7 +29,7 @@
             </svg>
             <p>Continúa con Facebook</p>
           </a>
-          <a class="anchor-grey" href="">
+          <a class="anchor-decoration" href="">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               x="0px"
@@ -67,18 +67,20 @@
         <div class="middle-text">
           <p>o continúa con</p>
         </div>
-        <div class="botton-inputs">
+        <div class="botton-text">
           <form class="form" action="">
-            <label for="email">Correo electronico</label>
+            <label class="label-format" for="email">Correo electronico</label>
             <input id="email" type="text" />
 
-            <label for="password">Contraseña</label>
+            <label class="label-format" for="password">Contraseña</label>
             <input id="password" type="text" />
 
-            <input type="checkbox" id="checkbox" />
-            <label for="checkbox">
-              Acepto los Términos, Condiciones y Políticas de AsYouWant.
-            </label>
+            <div class="check-container">
+              <input class="login-inputs" type="checkbox" id="checkbox" />
+              <label id="terms-text" for="checkbox">
+                Acepto los Términos, Condiciones y Políticas de AsYouWant.
+              </label>
+            </div>
           </form>
           <a id="rgtr" href="">
             <p>Registrate</p>
