@@ -62,7 +62,7 @@ main {
 }
 
 .top-text {
-  height: 28vh;
+  height: 20vh;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -71,6 +71,8 @@ main {
 
 svg {
   margin-left: 10px;
+  fill: white;
+  transition: 0.8s;
 }
 
 .top-text p {
@@ -89,6 +91,15 @@ svg {
   display: flex;
   align-items: center;
   text-decoration: none;
+}
+.anchor-decoration:hover svg {
+  fill: #3b5998;
+  transition: 0.8s;
+}
+
+.anchor-decoration:hover #g-plus {
+  fill: #db4a39;
+  transition: 0.8s;
 }
 
 .middle-text {
@@ -216,7 +227,41 @@ input {
 }
 
 /* Media Queries */
-@media (max-width: 700px) {
+@media (min-width: 320px) and (max-width: 767px) {
+  main {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .left-side {
+    width: 100%;
+  }
+  .left-side img {
+    width: 400px;
+    height: 200px;
+  }
+  .right-side {
+    width: 100%;
+    height: 110vh;
+  }
+  .top-text {
+    height: 23vh;
+  }
+  .anchor-decoration {
+    width: 430px;
+    overflow-y: hidden;
+  }
+  input {
+    width: 405px;
+  }
+  #rgtr {
+    width: 430px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
   main {
     height: 100%;
     width: 100%;
@@ -245,5 +290,21 @@ input {
   }
   #rgtr {
     width: 430px;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1700px) {
+  .left-side {
+    width: 100%;
+    height: 110vh;
+  }
+  .right-side {
+    width: 100%;
+    height: 110vh;
+  }
+  .top-text {
+    height: 28vh;
+  }
+  #terms-text {
+    height: 8vh;
   }
 }
