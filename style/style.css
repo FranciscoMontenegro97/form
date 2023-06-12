@@ -61,6 +61,16 @@ main {
   justify-content: center;
 }
 
+.top-text p,
+.middle-text p,
+.botton-text p,
+.label-format,
+.check-container {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 42.19px;
+}
+
 .top-text {
   height: 20vh;
   display: flex;
@@ -78,9 +88,6 @@ svg {
 .top-text p {
   margin-left: 20px;
   color: var(--left-sub-title);
-  font-weight: 400;
-  font-size: 36px;
-  line-height: 42.19px;
 }
 
 .anchor-decoration {
@@ -111,9 +118,7 @@ svg {
 
 .middle-text p {
   font-family: "Righteous";
-  font-weight: 400;
-  font-size: 36px;
-  line-height: 44.7px;
+  height: 5vh;
 }
 
 .botton-text {
@@ -125,9 +130,6 @@ svg {
 
 .botton-text p {
   color: var(--left-sub-title);
-  font-weight: 400;
-  font-size: 30px;
-  line-height: 35.16px;
   overflow-y: hidden;
 }
 
@@ -154,15 +156,12 @@ input {
 }
 
 .label-format {
-  width: 80%;
+  width: 50%;
   margin-bottom: 5px;
   margin-left: 45px;
   display: flex;
   align-items: flex-start;
   flex-direction: column;
-  font-weight: 400;
-  font-size: 36px;
-  line-height: 42.19px;
   overflow-y: hidden;
   overflow-x: hidden;
 }
@@ -173,9 +172,6 @@ input {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 21.09px;
   overflow-y: hidden;
   overflow-x: hidden;
 }
@@ -199,10 +195,8 @@ input {
 }
 
 #terms-text {
-  width: 70%;
-  height: 6vh;
-  overflow-y: hidden;
-  overflow-x: hidden;
+  width: 55%;
+  font-size: 26px;
 }
 
 #rgtr {
@@ -227,41 +221,8 @@ input {
 }
 
 /* Media Queries */
-@media (min-width: 320px) and (max-width: 767px) {
-  main {
-    height: 100%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-  }
-  .left-side {
-    width: 100%;
-  }
-  .left-side img {
-    width: 400px;
-    height: 200px;
-  }
-  .right-side {
-    width: 100%;
-    height: 110vh;
-  }
-  .top-text {
-    height: 30vh;
-  }
-  .anchor-decoration {
-    width: 430px;
-    overflow-y: hidden;
-  }
-  input {
-    width: 405px;
-  }
-  #rgtr {
-    width: 430px;
-  }
-}
-@media (min-width: 768px) and (max-width: 1023px) {
+
+@media (min-width: 320px) and (max-width: 1023px) {
   main {
     height: 100%;
     width: 100%;
